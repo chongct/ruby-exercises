@@ -9,3 +9,17 @@
 #
 # > 120
 #
+
+def factorial(number)
+  array = []
+  n = number
+  number.times do
+    array.push(n)
+    n -= 1
+  end
+
+  total = array.inject(1) {|product, n| product * n}
+  puts total
+end
+
+factorial(5)

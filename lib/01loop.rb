@@ -9,3 +9,9 @@
 # > Hello there
 # > Hello there
 # > Hello there
+
+def p_times(statement, num)
+  puts (statement + "\n") * num
+end
+
+p_times('Hello there', 3)
